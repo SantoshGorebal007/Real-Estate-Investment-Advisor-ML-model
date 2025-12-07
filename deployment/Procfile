@@ -1,0 +1,2 @@
+# Procfile (for Heroku or similar platforms)
+web: streamlit run streamlit_app/Home.py

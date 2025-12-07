@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "properties": {
+    "location": {"type": "string"},
+    "price": {"type": "number"},
+    "features": {"type": "object"}
+  },
+  "required": ["location", "price", "features"]
+}
