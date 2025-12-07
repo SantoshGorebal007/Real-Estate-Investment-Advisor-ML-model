@@ -1,9 +1,13 @@
 # requirements.txt
-streamlit
-mlflow
-scikit-learn
 pandas
 numpy
+scikit-learn
+joblib
+xgboost
+mlflow
+streamlit
 matplotlib
 seaborn
-joblib
+plotly
+requests
+flask 

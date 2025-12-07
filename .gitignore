@@ -10,10 +10,10 @@ venv/
 # Jupyter Notebooks
 .ipynb_checkpoints
 
-# Data
-/data/raw/
-/data/processed/
-/data/external/
+# # Data
+# /data/raw/
+# /data/processed/
+# /data/external/
 
 # Models
 /models/
