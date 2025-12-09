@@ -1,0 +1,6 @@
+multi_factor_score
+price_le_median_city
+pps_le_median_city
+Future_Price_5Y
+Price_in_Lakhs
+Price_Rs
