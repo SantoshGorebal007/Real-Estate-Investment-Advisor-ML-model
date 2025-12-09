@@ -1,124 +1,72 @@
-```markdown
-<!-- PROJECT LOGO -->
-<p align="center">
-  <img src="https://img.icons8.com/?size=100&id=58722&format=png&color=000000" width="90" />
-</p>
 
-<h1 align="center">🏠 Real Estate Investment Advisor  
-Predicting Property Profitability & Future Price (5 Years)</h1>
-
-<p align="center">
-  <b>ML-powered decision support system for real estate investors</b><br>
-  Classification + Regression + Streamlit App + MLflow Tracking
-</p>
-
----
-
-<p align="center">
-  <!-- Badges -->
-  <img src="https://img.shields.io/badge/Python-3.11-blue" />
-  <img src="https://img.shields.io/badge/Framework-Streamlit-red" />
-  <img src="https://img.shields.io/badge/ML-ScikitLearn%20%7C%20XGBoost-green" />
-  <img src="https://img.shields.io/badge/Tracking-MLflow-orange" />
-  <img src="https://img.shields.io/badge/Status-Production%20Ready-brightgreen" />
-</p>
+<div align="center">
+  <img src="" width="90" />
+  <h1>🏠 Real Estate Investment Advisor</h1>
+  <h3>Predicting Property Profitability & Future Price (5 Years)</h3>
+  <p><b>ML-powered decision support system for real estate investors</b></p>
+  <p>
+    <img src="https://img.shields.io/badge/Python-3.11-blue" />
+    <img src="https://img.shields.io/badge/Framework-Streamlit-red" />
+    <img src="https://img.shields.io/badge/ML-ScikitLearn%20%7C%20XGBoost-green" />
+    <img src="https://img.shields.io/badge/Tracking-MLflow-orange" />
+    <img src="https://img.shields.io/badge/Status-Production%20Ready-brightgreen" />
+  </p>
+</div>
 
 ---
 
-# 🚀 Project Overview
-
-This project builds an intelligent **Real Estate Investment Advisor** capable of:
-
-### ✔️ Classification  
-**“Is this property a Good Investment?”**
-
-### ✔️ Regression  
-**“What will be the estimated price after 5 years?”**
-
-The system uses:
-- Cleaned housing data (250,000+ rows)
-- Feature-engineered investment metrics
-- Trained ML models (RandomForest & XGBoost)
-- A Streamlit-based interactive web interface
-- MLflow experiment tracking
+<div align="center">
+<b>Classification & Regression | Streamlit App | MLflow Tracking | Docker Ready</b>
+</div>
 
 ---
 
-# 🌐 Live Demo (Streamlit Cloud)
-👉 **Live App:** *Add your deployed link here*  
-👉 **GitHub Repo:** *Add your repo link here*
+## 🚀 Quick Start
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/SantoshGorebal007/Real-Estate-Investment-Advisor-ML-model.git
+cd Real-Estate-Investment-Advisor-ML-model
+
+# 2. Install dependencies
+pip install -r deployment/requirements.txt
+
+# 3. Preprocess data & train models
+python -m src.data_preprocessing.run_preprocessing
+python -m src.models.train_classification
+python -m src.models.train_regression
+python -m src.models.save_used_features
+
+# 4. Launch the Streamlit app
+streamlit run streamlit_app/Home.py
+```
 
 ---
 
-# 🎯 Business Use Cases
-- 🏢 **Real Estate Agencies**: Automated valuation & investment scoring  
-- 🧾 **Property Portals**: Price forecasting for listings  
-- 🧍‍♂️ **Home Buyers**: Decide if the property is worth buying  
-- 🏦 **Investors**: Long-term return and risk evaluation  
-
----
-
-# 🧱 Project Features
-
-### 📌 Machine Learning  
-- RandomForest + XGBoost  
-- 2 Tasks:  
-  - Classification → *Good Investment (0/1)*  
-  - Regression → *Future Price (5Y)*  
-- MLflow experiment tracking  
-- Production feature alignment using `used_feature_list.txt`
-
-### 📊 Streamlit App  
-- Property input form  
-- Prediction output with confidence  
-- Market What-If Simulator  
-- EDA dashboard (histograms, trends, correlations)  
-- Model performance page  
-
-### 🛠️ Engineering  
-- End-to-end pipeline  
-- Preprocessing + Feature Engineering  
-- Outlier handling  
-- One-Hot Encoding  
-- Leakage-free training  
-- Safe inference using ProductionModel wrapper  
-
----
-
-
-# 🗂️ Project Folder Structure
+## 📂 Project Structure
 
 <details>
 <summary><b>Click to expand full structure</b></summary>
 
 ```text
 📦 Real-Estate-Investment-Advisor-ML-model/
-├── 📁 data/                # Raw, processed, and external datasets
-│   ├── 📁 raw/
-│   ├── 📁 processed/
-│   └── 📁 external/
-├── 📁 deployment/          # Dockerfile, requirements, Procfile
-│   ├── Dockerfile
-│   ├── requirements.txt
-│   └── Procfile
-├── 📁 docs/                # Documentation and references
-├── 📁 models/              # Saved models, feature importance, etc.
-│   ├── 📁 classification/
-│   ├── 📁 regression/
-│   └── 📁 feature_importance/
-├── 📁 notebooks/           # Jupyter notebooks for EDA and prototyping
-├── 📁 src/
-│   ├── 📁 data_preprocessing/   # Data cleaning, encoding, feature engineering
-│   ├── 📁 eda/                  # Exploratory Data Analysis scripts
-│   ├── 📁 mlflow_tracking/      # MLflow experiment tracking
-│   ├── 📁 models/               # Model training, evaluation, utilities
-│   ├── 📁 predictions/          # Prediction service and input schema
-│   └── 📁 utils/                # Helper functions, config, constants
-├── 📁 streamlit_app/       # Streamlit web application
-│   ├── 📁 assets/
-│   ├── 📁 pages/
-│   └── 📁 utils/
-├── 📁 workFlow/            # Workflow scripts
+├── data/                # Raw, processed, and external datasets
+│   ├── raw/
+│   ├── processed/
+│   └── external/
+├── deployment/          # Dockerfile, requirements, Procfile
+├── docs/                # Documentation and references
+├── models/              # Saved models, feature importance, etc.
+├── notebooks/           # Jupyter notebooks for EDA and prototyping
+├── src/
+│   ├── data_preprocessing/   # Data cleaning, encoding, feature engineering
+│   ├── eda/                  # Exploratory Data Analysis scripts
+│   ├── mlflow_tracking/      # MLflow experiment tracking
+│   ├── models/               # Model training, evaluation, utilities
+│   ├── predictions/          # Prediction service and input schema
+│   └── utils/                # Helper functions, config, constants
+├── streamlit_app/       # Streamlit web application
+├── workFlow/            # Workflow scripts
 ├── README.md
 ├── LICENSE
 ├── .gitignore
@@ -127,48 +75,65 @@ The system uses:
 
 ---
 
-# 🔧 Installation & Setup
+## 🎯 Business Use Cases
 
-### 1️⃣ Create Virtual Environment
-```bash
-python -m venv .venv
-.venv/Scripts/activate
-````
-
-### 2️⃣ Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3️⃣ Preprocess Data
-
-```bash
-python -m src.data_preprocessing.run_preprocessing
-```
-
-### 4️⃣ Train ML Models
-
-```bash
-python -m src.models.train_classification
-python -m src.models.train_regression
-```
-
-### 5️⃣ Save Production Feature List
-
-```bash
-python -m src.models.save_used_features
-```
-
-### 6️⃣ Run Streamlit App
-
-```bash
-streamlit run src/app/streamlit_app.py
-```
+- 🏢 Real Estate Agencies: Automated valuation & investment scoring
+- 🧾 Property Portals: Price forecasting for listings
+- 🧍‍♂️ Home Buyers: Decide if the property is worth buying
+- 🏦 Investors: Long-term return and risk evaluation
 
 ---
 
-# 📐 Architecture Diagram
+## 🧱 Features
+
+### 🤖 Machine Learning
+- RandomForest & XGBoost (Classification & Regression)
+- MLflow experiment tracking
+- Production feature alignment
+
+### 📊 Streamlit App
+- Property input form, prediction output, market what-if simulator
+- EDA dashboard (histograms, trends, correlations)
+- Model performance page
+
+### 🛠️ Engineering
+- End-to-end pipeline: preprocessing, feature engineering, outlier handling, encoding, leakage-free training
+- Safe inference using ProductionModel wrapper
+
+---
+
+## 🛠️ Installation & Setup (Detailed)
+
+1. **Create Virtual Environment**
+    ```bash
+    python -m venv .venv
+    .venv/Scripts/activate
+    ```
+2. **Install Dependencies**
+    ```bash
+    pip install -r deployment/requirements.txt
+    ```
+3. **Preprocess Data**
+    ```bash
+    python -m src.data_preprocessing.run_preprocessing
+    ```
+4. **Train ML Models**
+    ```bash
+    python -m src.models.train_classification
+    python -m src.models.train_regression
+    ```
+5. **Save Production Feature List**
+    ```bash
+    python -m src.models.save_used_features
+    ```
+6. **Run Streamlit App**
+    ```bash
+    streamlit run streamlit_app/Home.py
+    ```
+
+---
+
+## 📐 Architecture Diagram
 
 ```mermaid
 flowchart LR
@@ -186,7 +151,7 @@ flowchart LR
 
 ---
 
-# 🔄 Data Flow
+## 🔄 Data Flow
 
 1. **Raw CSV** → Cleaning, imputations
 2. **Feature Engineering** → price per sqft, z-score, investment score
@@ -199,7 +164,7 @@ flowchart LR
 
 ---
 
-# 📊 Sample Performance of Project
+## 📊 Sample Performance
 
 | Model        | Task           | Train Size | Test Size | Metric   | Value      |
 | ------------ | -------------- | ---------- | --------- | -------- | ---------- |
@@ -210,30 +175,22 @@ flowchart LR
 
 ---
 
-
-
-# 🚀 Deploying on Streamlit Cloud
-
-### Step-by-step:
+## 🚀 Deploying on Streamlit Cloud
 
 1. Push repo to GitHub
 2. Open: [https://streamlit.io/cloud](https://streamlit.io/cloud)
 3. Click **New App**
 4. Choose repo → branch: `main`
 5. Set *Main file*:
-
-```
-src/app/streamlit_app.py
-```
-
+    ```
+    streamlit_app/Home.py
+    ```
 6. Add secrets (if any)
 7. Deploy 🎉
 
 ---
 
-# 🧪 Smoke Tests (Optional But Recommended)
-
-Run:
+## 🧪 Smoke Test (Optional)
 
 ```python
 from src.models.inference import ProductionModel
@@ -246,36 +203,29 @@ If this works → Streamlit will work.
 
 ---
 
-# 🧰 Tech Stack
+## 🧰 Tech Stack
 
-* 🐍 **Python**
-* 📊 **Pandas, NumPy**
-* 🤖 **scikit-learn, XGBoost**
-* 📈 **MLflow**
-* 🖥️ **Streamlit**
-* 📉 **Plotly / Matplotlib**
-* 🗂️ **Joblib**
-* 🧪 **pytest (optional)**
+| 🐍 Python | 📊 Pandas, NumPy | 🤖 scikit-learn, XGBoost | 📈 MLflow | 🖥️ Streamlit | 📉 Plotly/Matplotlib | 🗂️ Joblib |
+|-----------|------------------|-------------------------|----------|-------------|---------------------|-----------|
 
 ---
 
-# 📚 References
+## 📚 References
 
-* Streamlit Docs
-* MLflow Docs
-* Scikit-learn Docs
-* XGBoost Docs
-
----
-
-# 🤝 Contributing
-
-PRs are welcome!
-Please open an issue first for significant changes.
+- Streamlit Docs
+- MLflow Docs
+- Scikit-learn Docs
+- XGBoost Docs
 
 ---
 
-# 📜 License
+## 🤝 Contributing
+
+PRs are welcome! Please open an issue first for significant changes.
+
+---
+
+## 📜 License
 
 Distributed under the MIT License. See `LICENSE` for details.
 
