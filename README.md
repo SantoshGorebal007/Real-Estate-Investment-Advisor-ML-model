@@ -133,21 +133,7 @@ streamlit run streamlit_app/Home.py
 
 ---
 
-## 📐 Architecture Diagram
 
-```mermaid
-flowchart LR
-  A[Raw Housing CSV] --> B[Preprocessing & Feature Engineering]
-  B --> C[Processed Dataset]
-  C --> D1[Classification Training]
-  C --> D2[Regression Training]
-  D1 --> E[MLflow Tracking]
-  D2 --> E
-  D1 --> F[Saved Models]
-  D2 --> F
-  F --> G[ProductionModel (inference.py)]
-  G --> H[Streamlit App]
-```
 
 ---
 
