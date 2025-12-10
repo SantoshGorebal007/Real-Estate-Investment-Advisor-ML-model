@@ -1,0 +1,81 @@
+ID
+BHK
+Size_in_SqFt
+Year_Built
+Furnished_Status
+Floor_No
+Total_Floors
+Age_of_Property
+Nearby_Schools
+Nearby_Hospitals
+Nearby_Schools_score
+Nearby_Hospitals_score
+pps_zscore
+bhk_good
+available_good
+rera_good
+State_Andhra Pradesh
+State_Assam
+State_Bihar
+State_Chhattisgarh
+State_Delhi
+State_Gujarat
+State_Haryana
+State_Jharkhand
+State_Karnataka
+State_Kerala
+State_Madhya Pradesh
+State_Maharashtra
+State_Odisha
+State_Punjab
+State_Rajasthan
+State_Tamil Nadu
+State_Telangana
+State_Uttar Pradesh
+State_Uttarakhand
+State_West Bengal
+City_Ahmedabad
+City_Amritsar
+City_Bangalore
+City_Bhopal
+City_Bhubaneswar
+City_Bilaspur
+City_Chennai
+City_Coimbatore
+City_Cuttack
+City_Dehradun
+City_Durgapur
+City_Dwarka
+City_Faridabad
+City_Gaya
+City_Gurgaon
+City_Guwahati
+City_Haridwar
+City_Hyderabad
+City_Indore
+City_Jaipur
+City_Jamshedpur
+City_Jodhpur
+City_Kochi
+City_Kolkata
+City_Lucknow
+City_Ludhiana
+City_Mangalore
+City_Mumbai
+City_Mysore
+City_Nagpur
+City_New Delhi
+City_Noida
+City_Patna
+City_Pune
+City_Raipur
+City_Ranchi
+City_Silchar
+City_Surat
+City_Trivandrum
+City_Vijayawada
+City_Vishakhapatnam
+City_Warangal
+Property_Type_Apartment
+Property_Type_Independent House
+Property_Type_Villa
