@@ -15,7 +15,7 @@ from pathlib import Path
 
 PROCESSED_PATH = "data/processed/processed_data.csv"
 AUTO_DROP_PATH = "models/auto_dropped_features.txt"
-OUTPUT_PATH = "models/used_feature_list.txt"
+OUTPUT_PATH = "src/models/used_feature_list.txt"
 
 def load_auto_drop_list():
     """Reads auto_dropped_features.txt safely and strips BOM if present."""

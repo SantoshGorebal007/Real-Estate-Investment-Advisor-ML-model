@@ -304,7 +304,7 @@ elif choice == "🧠 Model Info":
     else:
         st.info("Regression metrics.json not found.")
 
-    st.markdown("---")
+    st.markdown("---") 
     st.subheader("Top feature importances (if available)")
     fi_path = PROJECT_ROOT / "models" / "inspection" / "permutation_importance_top30.csv"
     if fi_path.exists():
