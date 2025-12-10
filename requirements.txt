@@ -15,3 +15,4 @@ gunicorn
 folium
 # dev/test
 pytest
+gdown==4.7.1
